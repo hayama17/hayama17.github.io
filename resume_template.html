@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,7 @@
             margin: 0 auto;
             background: white;
             min-height: 100vh;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         
         .header {
@@ -79,7 +80,8 @@
             padding-bottom: 0.5rem;
         }
         
-        .experience-item, .project-item {
+        .experience-item,
+        .project-item {
             margin-bottom: 2rem;
             padding: 1.5rem;
             border-left: 4px solid #667eea;
@@ -87,12 +89,14 @@
             border-radius: 0 8px 8px 0;
         }
         
-        .experience-item h3, .project-item h3 {
+        .experience-item h3,
+        .project-item h3 {
             color: #333;
             margin-bottom: 0.5rem;
         }
         
-        .company, .tech-stack {
+        .company,
+        .tech-stack {
             color: #666;
             font-style: italic;
             margin-bottom: 0.5rem;
@@ -157,70 +161,56 @@
             .header {
                 padding: 2rem 1rem;
             }
-            
             .header h1 {
                 font-size: 2rem;
             }
-            
             .contact-info {
                 flex-direction: column;
                 gap: 0.5rem;
             }
-            
             .content {
                 padding: 1rem;
             }
-            
             .skills {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
             <h1>Your Name</h1>
-            <div class="title">Platform Engineer / DevOps Specialist</div>
+            <div class="title">SRE / DevOps Specialist</div>
             <div class="contact-info">
-                <a href="mailto:your.email@example.com">📧 your.email@example.com</a>
-                <a href="https://github.com/yourusername">🐙 GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a>
-                <a href="tel:+81901234567">📱 090-1234-5678</a>
+                <a href="mailto:kohei.hayama.9r@gmail.com">📧 kohei.hayama.9r@gmail.com</a>
+                <a href="https://github.com/hayama17">🐙 GitHub</a>
+                <a href="https://x.com/hymaaa_k">💼 X</a>
             </div>
         </header>
 
         <div class="content">
             <section class="section">
                 <h2>About</h2>
-                <p>プラットフォームエンジニアリングに情熱を持つエンジニアです。Kubernetes、OpenShift、CI/CDを活用したDeveloper Experienceの向上に取り組んでいます。金融系システムでのコンテナプラットフォーム構築経験を活かし、エンタープライズ環境での技術革新を推進します。</p>
+                <p>SREとCCoE活動をメインとしているエンジニアです。 Terraform/CDK、CI/CD、クラウド基盤を中心とした自動化・標準化を通じて 開発者体験の向上に取り組んでいます。 CloudNative Days実行委員として最新技術をキャッチアップし、 実務とコミュニティ活動の両面から技術力向上を続けています。
+                </p>
             </section>
 
-            <section class="section">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <h3>シニアプラットフォームエンジニア</h3>
-                    <div class="company">株式会社○○○○</div>
-                    <div class="date">2022年4月 - 現在</div>
-                    <ul>
-                        <li>Kubernetes/OpenShiftを用いたコンテナプラットフォームの設計・構築</li>
-                        <li>CI/CDパイプライン（Tekton, ArgoCD）の実装と運用</li>
-                        <li>開発チーム向けのプラットフォーム利用サポート・コンサルティング</li>
-                        <li>Infrastructure as Code (Terraform, Ansible) による自動化推進</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3>DevOpsエンジニア</h3>
-                    <div class="company">株式会社△△△△</div>
-                    <div class="date">2020年4月 - 2022年3月</div>
-                    <ul>
-                        <li>AWSクラウドインフラの設計・運用</li>
-                        <li>Docker/Kubernetesを用いたコンテナ化推進</li>
-                        <li>監視・ログ基盤（Prometheus, Grafana, ELK Stack）の構築</li>
-                        <li>アプリケーション開発チームとの協業によるDevOps文化の浸透</li>
-                    </ul>
-                </div>
+            <div class="experience-item">
+                <h3>SREエンジニア / CCoEエンジニア</h3>
+                <div class="company">Supership株式会社</div>
+                <div class="date">2023 - 現在</div>
+                <ul>
+                    <li>AWS・GCP Organizationを活用したマルチクラウド基盤設計・運用</li>
+                    <li>Terraform・CDKを用いたInfrastructure as Code推進</li>
+                    <li>PrometheusとGrafanaによるモニタリング環境構築</li>
+                    <li>DevContainerとDockerによる開発環境標準化</li>
+                    <li>CI/CDパイプライン設計・導入による開発効率向上</li>
+                    <li>サーバレスアーキテクチャ（Lambda, Cloud Run）やコンテナサービスを活用したスケーラブル構成設計・構築</li>
+                    <li>セキュリティガバナンス基盤整備とアジリティのバランス調整</li>
+                </ul>
+            </div>
             </section>
 
             <section class="section">
@@ -230,42 +220,42 @@
                         <h3>Container & Orchestration</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Kubernetes</span>
-                            <span class="skill-tag">OpenShift</span>
                             <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Istio</span>
+                            <span class="skill-tag">OverlayFS</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h3>CI/CD & Automation</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Tekton</span>
                             <span class="skill-tag">ArgoCD</span>
                             <span class="skill-tag">GitHub Actions</span>
                             <span class="skill-tag">Ansible</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h3>Cloud & Infrastructure</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
                             <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">CDK</span>
                             <span class="skill-tag">Linux</span>
                             <span class="skill-tag">Networking</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h3>Observability</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">Prometheus</span>
                             <span class="skill-tag">Grafana</span>
-                            <span class="skill-tag">Jaeger</span>
-                            <span class="skill-tag">ELK Stack</span>
+                            <span class="skill-tag">Cloud Watch</span>
+                            <span class="skill-tag">Cloud Monitoring</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h3>Programming</h3>
                         <div class="skill-tags">
@@ -273,9 +263,11 @@
                             <span class="skill-tag">Bash</span>
                             <span class="skill-tag">YAML</span>
                             <span class="skill-tag">Go</span>
+                            <span class="skill-tag">C/C+</span>
+                            <span class="skill-tag">Java</span>
                         </div>
                     </div>
-                    
+
                     <div class="skill-category">
                         <h3>Database</h3>
                         <div class="skill-tags">
@@ -290,42 +282,56 @@
             <section class="section">
                 <h2>Projects</h2>
                 <div class="project-item">
-                    <h3>エンタープライズ向けコンテナプラットフォーム構築</h3>
-                    <div class="tech-stack">OpenShift, Kubernetes, Tekton, ArgoCD, Istio</div>
-                    <p>金融系システム向けのセキュアなコンテナプラットフォームを設計・構築。マルチテナント環境での運用を実現し、開発チームのデプロイ時間を80%短縮。CI/CDパイプラインの標準化により、20以上のプロジェクトで活用されている。</p>
+                    <h3>マルチクラウド基盤の標準化・ガバナンス整備</h3>
+                    <div class="tech-stack">AWS Organizations, GCP Organizations, Terraform, DevContainer</div>
+                    <p>全社的なクラウド活用統制を実現。AWS・GCPのOrganization管理によるマルチアカウント運用基盤を構築。DevContainerとTerraformによる開発環境標準化で、複数プロダクトの開発効率向上を実現。</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>クラウドネイティブ監視基盤の構築</h3>
-                    <div class="tech-stack">Prometheus, Grafana, Jaeger, Vector</div>
-                    <p>マイクロサービス環境向けのObservability基盤を構築。分散トレーシング、メトリクス収集、ログ集約を統合し、MTTR（平均修復時間）を60%改善。SLI/SLOベースの監視体制を確立。</p>
+                    <h3>モニタリング・可観測性環境の構築</h3>
+                    <div class="tech-stack">Prometheus, Grafana, Docker</div>
+                    <p>新規プロダクト立ち上げおよび既存サービス改善において、PrometheusとGrafanaを用いたモニタリング環境を構築。サービス信頼性向上と障害対応の迅速化を実現。再現性・スピード・セキュリティを重視した技術選定により、チーム生産性向上に貢献。</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>プロダクトインフラの構築・改修</h3>
+                    <div class="tech-stack">Docker, AWS Lambda, Google Cloud Run, CI/CD</div>
+                    <p>新規プロダクトの立ち上げから既存サービスの改修まで、幅広いインフラ業務を担当。コンテナ技術とサーバレスアーキテクチャを組み合わせ、各プロダクトの要件に応じた構成を実現。CI/CDパイプラインの構築・改善を通じて、開発効率向上とサービス品質向上に貢献。</p>
                 </div>
             </section>
 
             <section class="section">
                 <h2>Speaking & Community</h2>
                 <div class="achievements">
+                    <h3>登壇・発表</h3>
                     <ul>
-                        <li>「金融系システムでのOpenShift活用事例」- DevOps Days Tokyo 2024</li>
-                        <li>「プラットフォームエンジニアリング実践」- Cloud Native Days 2024</li>
-                        <li>Kubernetes Meetup Tokyo コミュニティ運営メンバー</li>
-                        <li>技術ブログ執筆（月1回ペース、累計50記事）</li>
+                        <li>「技術も運営も全部やる！クラウドネイティブハンズオンのウラ話」- CloudNative Days Spring 2025</li>
+                        <li>「入れ子型マイクロサービスのためのオーバレイファイルシステムの設計と実装」- 情報処理学会 第158回OS研究発表会</li>
                     </ul>
-                </div>
-            </section>
 
-            <section class="section">
-                <h2>Certifications</h2>
-                <div class="achievements">
+                    <h3>コミュニティ活動</h3>
                     <ul>
-                        <li>AWS Certified Solutions Architect - Associate</li>
-                        <li>Red Hat Certified OpenShift Administrator</li>
-                        <li>Certified Kubernetes Administrator (CKA)</li>
-                        <li>応用情報技術者試験</li>
+                        <li><strong>CloudNative Days実行委員</strong>
+                            <ul>
+                                <li>CloudNative Days Tokyo 2023 (CNDT2023)</li>
+                                <li>CloudNative Days Winter 2024 (CNDW2024)</li>
+                                <li>CloudNative Days Spring 2025 (CNDS2025)</li>
+                            </ul>
+                        </li>
+                        <li><strong>KubeCon Japan 2025</strong> - ボランティアスタッフ</li>
+                        <li><strong>KGDC Tech Conference実行委員</strong> (2023年〜)</li>
+                    </ul>
+
+                    <h3>技術普及・教育活動</h3>
+                    <ul>
+                        <li>累計100人超が参加するハンズオン企画・運営</li>
+                        <li>チームでの技術書典出版プロジェクト参画</li>
+                        <li>実践的な技術体験提供と知識共有活動</li>
                     </ul>
                 </div>
             </section>
         </div>
     </div>
 </body>
+
 </html>
