@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        .header .title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-info a:hover {
+            opacity: 1;
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .experience-item, .project-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-left: 4px solid #667eea;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .experience-item h3, .project-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company, .tech-stack {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .achievements {
+            background: #e8f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #17a2b8;
+        }
+        
+        .achievements ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .achievements li::before {
+            content: "🎯";
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 2rem 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Your Name</h1>
+            <div class="title">Platform Engineer / DevOps Specialist</div>
+            <div class="contact-info">
+                <a href="mailto:your.email@example.com">📧 your.email@example.com</a>
+                <a href="https://github.com/yourusername">🐙 GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile">💼 LinkedIn</a>
+                <a href="tel:+81901234567">📱 090-1234-5678</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>About</h2>
+                <p>プラットフォームエンジニアリングに情熱を持つエンジニアです。Kubernetes、OpenShift、CI/CDを活用したDeveloper Experienceの向上に取り組んでいます。金融系システムでのコンテナプラットフォーム構築経験を活かし、エンタープライズ環境での技術革新を推進します。</p>
+            </section>
+
+            <section class="section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>シニアプラットフォームエンジニア</h3>
+                    <div class="company">株式会社○○○○</div>
+                    <div class="date">2022年4月 - 現在</div>
+                    <ul>
+                        <li>Kubernetes/OpenShiftを用いたコンテナプラットフォームの設計・構築</li>
+                        <li>CI/CDパイプライン（Tekton, ArgoCD）の実装と運用</li>
+                        <li>開発チーム向けのプラットフォーム利用サポート・コンサルティング</li>
+                        <li>Infrastructure as Code (Terraform, Ansible) による自動化推進</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>DevOpsエンジニア</h3>
+                    <div class="company">株式会社△△△△</div>
+                    <div class="date">2020年4月 - 2022年3月</div>
+                    <ul>
+                        <li>AWSクラウドインフラの設計・運用</li>
+                        <li>Docker/Kubernetesを用いたコンテナ化推進</li>
+                        <li>監視・ログ基盤（Prometheus, Grafana, ELK Stack）の構築</li>
+                        <li>アプリケーション開発チームとの協業によるDevOps文化の浸透</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h3>Container & Orchestration</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">OpenShift</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Istio</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>CI/CD & Automation</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Tekton</span>
+                            <span class="skill-tag">ArgoCD</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Ansible</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Cloud & Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Networking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Observability</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Prometheus</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">Jaeger</span>
+                            <span class="skill-tag">ELK Stack</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">YAML</span>
+                            <span class="skill-tag">Go</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>エンタープライズ向けコンテナプラットフォーム構築</h3>
+                    <div class="tech-stack">OpenShift, Kubernetes, Tekton, ArgoCD, Istio</div>
+                    <p>金融系システム向けのセキュアなコンテナプラットフォームを設計・構築。マルチテナント環境での運用を実現し、開発チームのデプロイ時間を80%短縮。CI/CDパイプラインの標準化により、20以上のプロジェクトで活用されている。</p>
+                </div>
+
+                <div class="project-item">
+                    <h3>クラウドネイティブ監視基盤の構築</h3>
+                    <div class="tech-stack">Prometheus, Grafana, Jaeger, Vector</div>
+                    <p>マイクロサービス環境向けのObservability基盤を構築。分散トレーシング、メトリクス収集、ログ集約を統合し、MTTR（平均修復時間）を60%改善。SLI/SLOベースの監視体制を確立。</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Speaking & Community</h2>
+                <div class="achievements">
+                    <ul>
+                        <li>「金融系システムでのOpenShift活用事例」- DevOps Days Tokyo 2024</li>
+                        <li>「プラットフォームエンジニアリング実践」- Cloud Native Days 2024</li>
+                        <li>Kubernetes Meetup Tokyo コミュニティ運営メンバー</li>
+                        <li>技術ブログ執筆（月1回ペース、累計50記事）</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certifications</h2>
+                <div class="achievements">
+                    <ul>
+                        <li>AWS Certified Solutions Architect - Associate</li>
+                        <li>Red Hat Certified OpenShift Administrator</li>
+                        <li>Certified Kubernetes Administrator (CKA)</li>
+                        <li>応用情報技術者試験</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
